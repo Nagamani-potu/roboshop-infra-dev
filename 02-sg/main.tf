@@ -108,13 +108,13 @@ module "web" {
     # sg_ingress_rules = var.web_sg_ingress_rules
 }
 
-module "app-alb" {
+module "app_alb" {
     source = "../../terraform-aws-security-group"
     project_name = var.project_name
     environment = var.environment
     sg_description = "SG for APP ALB"
     vpc_id = data.aws_ssm_parameter.vpc_id.value
-    sg_name = "app-alb"
+    sg_name = "app_alb"
     # sg_ingress_rules = var.web_sg_ingress_rules
 }
 
