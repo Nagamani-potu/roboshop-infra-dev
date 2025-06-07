@@ -39,7 +39,6 @@ data "aws_ssm_parameter" "database_subnet_ids" {
   name = "/${var.project_name}/${var.environment}/database_subnet_ids"
 }
 
-
 data "aws_ssm_parameter" "vpn_sg_id" {
   name = "/${var.project_name}/${var.environment}/vpn_sg_id"
 }

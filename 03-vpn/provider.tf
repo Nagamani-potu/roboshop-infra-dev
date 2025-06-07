@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket         = "state-dev-devopstraining"
-    key            = "vpc"
+    key            = "VPC"
     region         = "us-east-1"
     dynamodb_table = "devops-locking-dev"
   }
