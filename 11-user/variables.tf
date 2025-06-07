@@ -25,3 +25,9 @@ variable "zone_name" {
 variable "iam_instance_profile" {
   default = "ShellScriptRoleForRoboshop"
 }
+
+variable "app_version" {
+  description = "Version of the application"
+  type        = string
+  default     = "1.0.0"  # or no default if you want to require it
+}
